@@ -1,0 +1,15 @@
+﻿<Window x:Class="Base64ImageConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock x:Name="txbSourcePath" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,27,0,0" Width="469" Text="Image Source" TextTrimming="WordEllipsis"/>
+        <Button x:Name="btnSelectImage" Content="Select Image" Width="125" Margin="24,48,0,0" Click="btnSelectImage_Click" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <StackPanel Margin="24,85,24,18" Height="Auto">
+            <TextBox x:Name="txtBase64" TextWrapping="Wrap" Text="Base64 string result" VerticalAlignment="Top" Height="Auto" MaxHeight="160" TextOptions.TextFormattingMode="Display" VerticalScrollBarVisibility="Visible"/>
+            <Button x:Name="btnConvertToBase64" Content="Convert To Base 64" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,21,0,0" Click="btnConvertToBase64_Click"/>
+            <Image x:Name="ImgConverted" VerticalAlignment="Top" Margin="0,21,0,0" MaxHeight="400"/>
+            <Button x:Name="btnConvertToImage" Content="Convert To Image" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" Click="btnConvertToImage_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
