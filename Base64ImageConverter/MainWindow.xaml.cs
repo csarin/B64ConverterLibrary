@@ -50,7 +50,7 @@ namespace Base64ImageConverter
             var bitmap = new System.Windows.Media.Imaging.BitmapImage();
             bitmap.BeginInit();
             MemoryStream memoryStream = new MemoryStream();
-            image.Save(memoryStream, ImageFormat.Bmp);
+            image.Save(memoryStream, ImageFormat.Jpeg);
             memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
             bitmap.StreamSource = memoryStream;
             bitmap.EndInit();
